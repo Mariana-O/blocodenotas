@@ -1,0 +1,52 @@
+.post-it {
+  background-color: #8f8;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #4c4;
+  border-radius: 10px;
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  box-sizing: border-box;
+  position: relative;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.post-it:hover {
+  transform: translateY(-5px);
+}
+
+.post-it-buttons {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.post-it-buttons button {
+  cursor: pointer;
+  font-size: 24px; /* Ajuste o tamanho dos ícones conforme necessário */
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+
+.post-it textarea {
+  width: calc(100% - 20px);
+  height: calc(100% - 40px);
+  border: none;
+  resize: none;
+  font-size: 16px;
+  font-family: 'Arial', sans-serif;
+  color: black;
+  background-color: transparent;
+  outline: none;
+  box-sizing: border-box;
+  border-radius: 5px;
+  text-align: center;
+  cursor: text;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
