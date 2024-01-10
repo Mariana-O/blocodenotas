@@ -1,16 +1,18 @@
 .post-it {
-  background-color: #8f8;
+  background-color: #f9f7ed;
   padding: 10px;
   margin: 10px;
-  border: 1px solid #4c4;
-  border-radius: 10px;
-  display: inline-block;
+  border: 1px solid #e0dcb4;
+  border-radius: 8px;
   width: 150px;
   height: 150px;
   box-sizing: border-box;
   position: relative;
   transition: transform 0.2s ease;
   cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  overflow: hidden; /* Impede a exibição de barras de rolagem */
 }
 
 .post-it:hover {
@@ -25,15 +27,23 @@
 
 .post-it-buttons button {
   cursor: pointer;
-  font-size: 24px; /* Ajuste o tamanho dos ícones conforme necessário */
+  font-size: 18px;
   border: none;
   background-color: transparent;
   outline: none;
 }
 
-.post-it textarea {
-  width: calc(100% - 20px);
+.post-it-textarea {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: calc(100% - 40px);
+  padding: 30px;
+}
+
+.post-it textarea {
+  width: 100%;
+  height: 100%;
   border: none;
   resize: none;
   font-size: 16px;
@@ -45,8 +55,21 @@
   border-radius: 5px;
   text-align: center;
   cursor: text;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  overflow: hidden; /* Impede a exibição de barras de rolagem */
+}
+
+@media only screen and (max-width: 600px) {
+  .post-it {
+    width: 100%;
+    height: auto;
+  }
+
+  .post-it-buttons {
+    top: 2px;
+    right: 2px;
+  }
+
+  .post-it-buttons button {
+    font-size: 14px;
+  }
 }

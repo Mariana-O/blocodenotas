@@ -1,8 +1,8 @@
 import { initializeApp } from "firebase/app";
 
 const firebaseApp = initializeApp({
-  apiKey: "AIzaSyBUywG9aCdbxtguZwQaXd4rnuenH6dLIgA",
-  authDomain: "notas-2a17f.firebaseapp.com",
-  projectId: "notas-2a17f",})
+  apiKey: "AIzaSyDLbHt9mKCAJ67drAHgJ5JhjhVQJtBcPdU",
+  authDomain: "blocodenotas-11346.firebaseapp.com",
+  projectId: "blocodenotas-11346",})
 
   export default firebaseApp;
